@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="h"
+        style="border: 2px solid red; width: 700px; box-shadow: 0 0 10px rgb(95, 76, 76); align-items: center;margin: 100px;margin-left: 25%;">
+        <div class="sum">
+            <h1>The Sum of Given Numbers</h1>
+            <p id="sum"></p>
+        </div>
+
+        <div class="fact">
+            <h1>Factorial of Given numbers</h1>
+            <p id="fact"></p>
+        </div>
+        <div class="sa">
+            <h1>Square of a Given Number</h1>
+            <p id="sa"></p>
+        </div>
+
+        <div class="s">
+            <h1>Sum of Square of Given Numbers</h1>
+            <p id="sqmsg"></p>
+        </div>
+    </div>
+
+
+    <script>
+        let n = parseInt(prompt("Enter Number:"));
+        let i = 0;
+
+        //  sum of given no's
+        let sum = 0
+        while (i <= n) {
+            sum += i;
+            i++;
+        }
+        let message = `The Sum of ${n}: ${sum}`;
+        console.log(message);
+        document.getElementById("sum").innerHTML = message;
+
+        //  factorial of a number
+
+        let fact = 1;
+        i = 1;
+        while (i <= n) {
+            fact = fact * i;
+            i++;
+        }
+
+        let factmsg = `The Factorial of ${n} : ${fact}`;
+        console.log(factmsg);
+        document.getElementById("fact").innerHTML = factmsg;
+
+        // Square of a number
+        let sq = 0;
+        i = 0;
+        while (i === 0) {
+            sq = n * n;
+            i++
+        }
+
+        let sa = `The Square of ${n} : ${sq}`;
+        console.log(sa);
+        document.getElementById("sa").innerHTML = sa;
+
+        // Sum of square of given numbers
+
+        let s = 0;
+        i = 1;
+
+        while (i <= n) {
+            s += i * i;
+            i++;
+        }
+
+        let squareMsg = `The Sum of Squares from 1 to ${n} is: ${s}`;
+        console.log(squareMsg);
+        document.getElementById("sqmsg").innerHTML = squareMsg;
+
+    </script>
+    <a href="index.html">back</a>
+</body>
+
+</html>

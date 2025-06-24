@@ -1,0 +1,25 @@
+body {
+    background-color: beige;
+    align-items: center;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+button {
+    background-color: aqua;
+    color: black;
+    padding: 5px 10px;
+    border-radius: 10px;
+    border-color: black;
+    cursor: pointer;
+}
+
+a p {
+    font-size: large;
+    line-height: 1.9;
+}
+
+p #mul {
+    font-size: large;
+    line-height: 1.9;
+}

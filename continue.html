@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript </title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h1>
+        Welcome to JavaScript Programming
+    </h1>
+    <a>
+        <p id="sss" onclick="con()">Click Here to Start</p>
+    </a>
+
+
+    <script>
+        function con() {
+            let i = 0;
+            let ss = ""
+            while (i <= 10) {
+                ss += i + "\n";
+                i++;
+                if (i == 5) {
+                    ss += "Hello \n";
+                    continue;
+                    i++;
+                }
+
+
+            }
+            document.getElementById("sss").innerText = ss;
+        }
+
+    </script>
+    <a href="index.html">back</a>
+</body>
+
+</html>
